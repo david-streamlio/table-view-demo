@@ -15,7 +15,6 @@ import java.util.concurrent.Executors;
 
 public class StockTradeGenerator {
 
-    private static final String BROKER_URL = "pulsar://127.0.0.1:6650";
     private static final String STOCK_QUOTE_TOPIC = "persistent://public/default/stock-quotes";
     private static final String STOCK_TRADE_TOPIC = "persistent://public/default/stock-trades";
     private static final String STOCK_STATS_TOPIC = "persistent://public/default/stock-stats";

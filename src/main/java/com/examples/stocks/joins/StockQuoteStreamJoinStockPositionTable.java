@@ -58,9 +58,9 @@ public class StockQuoteStreamJoinStockPositionTable extends PulsarClientAware {
     }
 
     public static void main(String[] args) throws PulsarClientException {
-        StockQuoteStreamJoinStockPositionTable join = new StockQuoteStreamJoinStockPositionTable(
+        StockQuoteStreamJoinStockPositionTable demo = new StockQuoteStreamJoinStockPositionTable(
                 STOCK_QUOTE_TOPIC, STOCK_POSITIONS_TOPIC);
 
-        join.join();
+        demo.join();
     }
 }

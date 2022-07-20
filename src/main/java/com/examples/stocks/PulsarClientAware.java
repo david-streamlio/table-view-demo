@@ -6,8 +6,8 @@ import org.apache.pulsar.client.api.PulsarClientException;
 
 public abstract class PulsarClientAware {
 
-    //    private static final String BROKER_URL = "pulsar://192.168.1.121:6650";
-    protected static final String BROKER_URL = "pulsar://127.0.0.1:6650";
+    protected static final String BROKER_URL = "pulsar://192.168.1.121:6650";
+    // protected static final String BROKER_URL = "pulsar://127.0.0.1:6650";
 
     private PulsarClient client;
     private PulsarClientConfig config;

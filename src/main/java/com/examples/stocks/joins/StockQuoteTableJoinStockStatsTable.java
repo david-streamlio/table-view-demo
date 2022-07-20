@@ -47,10 +47,10 @@ public class StockQuoteTableJoinStockStatsTable extends PulsarClientAware {
     }
 
     public static void main(String[] args) throws PulsarClientException {
-        StockQuoteTableJoinStockStatsTable join = new StockQuoteTableJoinStockStatsTable(
-                STOCK_QUOTE_TOPIC, STOCK_STATS_TOPIC);
+        StockQuoteTableJoinStockStatsTable demo =
+                new StockQuoteTableJoinStockStatsTable(STOCK_QUOTE_TOPIC, STOCK_STATS_TOPIC);
 
-        join.join();
+        demo.join();
     }
 
 }
