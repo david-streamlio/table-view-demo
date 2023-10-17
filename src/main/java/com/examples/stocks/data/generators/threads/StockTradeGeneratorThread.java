@@ -49,7 +49,7 @@ public class StockTradeGeneratorThread extends AbstractDataGenerator {
 
         @Override
         public void received(Consumer<StockQuote> consumer, Message<StockQuote> msg) {
-            if (rnd.nextBoolean()) { // Execute a trade?
+            if (rnd.nextInt(100) < 5) { // Execute a trade 5% of the time
                 Integer lotSize = (rnd.nextInt(100)+1) * 10;
                 StockTrade trade = new StockTrade(msg.getKey(), lotSize, msg.getValue().getQuotePrice());
                 try {

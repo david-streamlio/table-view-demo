@@ -56,7 +56,7 @@ public class StockPositionTableJoinStockQuoteTable extends PulsarClientAware {
 
             if (quote != null) {
                 System.out.println(String.format
-                        ("%s [ Last Trade: $%.2f  Purchase Price: $%.2f  Shares: %,d  Net Gain: $%,.2f ]",
+                        ("%s [ Latest Quote: $%.2f  Purchase Price: $%.2f  Shares: %,d  Net Gain: $%,.2f ]",
                                 symbol, quote.getQuotePrice(), position.getPurchasePrice(),
                                 position.getQuantity(),
                                 ((quote.getQuotePrice()) - position.getPurchasePrice()) * position.getQuantity()));

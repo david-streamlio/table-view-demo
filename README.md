@@ -56,6 +56,10 @@ topics used by the rest of the demos. You can achieve this by running `mvn compi
 3. You can run the second demo class, `StockQuoteTableJoinStockStatsTable` using the `mvn compile exec:java@demo2` command
 4. Likewise, the third demo class, `StockPositionTableJoinStockQuoteTable` can be run using the `mvn compile exec:java@demo3` command
 
+## Monitoring
+1. To monitor the stock quote topic, you can run the `mvn compile exec:java@monitor-quotes` command
+2. To monitor the stock trade topic, you can run the `mvn compile exec:java@monitor-trades` command
+
 ## Docs
 
 The javadoc for the TableView API can be found at https://pulsar.apache.org/api/client/2.10.1/org/apache/pulsar/client/api/TableView.html

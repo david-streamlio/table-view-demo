@@ -56,6 +56,24 @@
                             <mainClass>com.examples.stocks.joins.StockPositionTableJoinStockQuoteTable</mainClass>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>monitor-quotes</id>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>com.examples.stocks.data.readers.StockQuoteMonitor</mainClass>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>monitor-trades</id>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>com.examples.stocks.data.readers.StockTradeMonitor</mainClass>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
