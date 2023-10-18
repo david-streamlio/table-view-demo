@@ -27,7 +27,7 @@ public class StockQuoteGeneratorThread extends AbstractDataGenerator {
         while (running) {
             try {
                 Float newPrice = Math.abs(new BigDecimal(this.lastPrice +
-                        (rnd.nextFloat() * (rnd.nextBoolean() ? 1 : -1)))
+                        (0.01 * (rnd.nextInt(5)) * (rnd.nextBoolean() ? 1 : -1)))
                         .setScale(2, RoundingMode.HALF_UP).floatValue());
 
                 this.createProducer().newMessage(Schema.JSON(StockQuote.class))

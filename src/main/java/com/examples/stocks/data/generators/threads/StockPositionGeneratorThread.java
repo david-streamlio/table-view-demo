@@ -98,7 +98,9 @@ public class StockPositionGeneratorThread extends AbstractDataGenerator {
         while (running) {
             try {
                 Thread.sleep(10 * 1000L);
-                updatePortfolio();
+                if (rnd.nextInt(100) < 50) {
+                    updatePortfolio();
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
